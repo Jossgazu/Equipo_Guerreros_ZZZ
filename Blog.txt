@@ -1,0 +1,3 @@
+Josse Gallegos: Grid
+Fabricio Miotat: Flexbox
+Compañero: Responsive Web Design
