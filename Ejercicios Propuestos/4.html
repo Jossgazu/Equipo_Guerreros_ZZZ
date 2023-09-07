@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.azul { grid-area: azul; }
+.verde { grid-area: verde; }
+.naranja { grid-area: naranja; }
+.negro { grid-area: negro; }
+.rosa { grid-area: rosa; }
+.marron { grid-area: marron; }
+
+.grid-container {
+  background-color: black;
+  display: grid;
+  grid-template:
+    'verde verde azul azul azul'
+    'verde verde naranja naranja negro'
+    'rosa rosa naranja naranja marron';
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  border-radius: 10px;
+}
+
+.verde {
+    background-color: rgb(51, 152, 136);
+}
+.azul {
+    background-color: rgb(38, 215, 234);
+}
+.marron {
+    background-color: rgb(113, 102, 100);
+}
+.negro {
+    background-color: rgb(53, 93, 103);
+}
+.rosa{
+    background-color: rgb(192, 91, 159);
+}
+.naranja{
+    background-color: rgb(168, 88, 81);
+}
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+  <div class="azul"> </div>
+  <div class="verde"> </div>
+  <div class="naranja"> </div>  
+  <div class="negro"> </div>
+  <div class="rosa"> </div>
+  <div class="marron"> </div>
+</div>
+
+</body>
+</html>

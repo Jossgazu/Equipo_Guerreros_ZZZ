@@ -4,26 +4,36 @@
 <style>
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto auto;
-  background-color: #2196F3;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #21f360;
   padding: 10px;
+  gap: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .grid-item {
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 30px;
+  padding: 40px;
+  font-size: 24px;
   text-align: center;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.grid-item:hover {
+  background-color: rgb(128, 125, 125);
+  transform: scale(1.05);
 }
 </style>
 </head>
 <body>
 
-<h1>Grid Elements</h1>
+<h1 style="text-align: center;">Elementos de la Cuadrícula</h1>
 
-<p>A Grid Layout must have a parent element with the <em>display</em> property set to <em>grid</em> or <em>inline-grid</em>.</p>
+<p style="text-align: center;">Un diseño de cuadrícula debe tener un elemento padre con la propiedad <em>display</em> establecida en <em>grid</em> o <em>inline-grid</em>.</p>
 
-<p>Direct child element(s) of the grid container automatically becomes grid items.</p>
+<p style="text-align: center;">Los elementos hijos directos del contenedor de la cuadrícula se convierten automáticamente en elementos de la cuadrícula.</p>
 
 <div class="grid-container">
   <div class="grid-item">1</div>
@@ -39,5 +49,6 @@
 
 </body>
 </html>
+
 
 
