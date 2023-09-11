@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.zapatos { grid-area: zapatos; }
+.zapatos2 { grid-area: zapatos2; }
+.short { grid-area: short; }
+.short2 { grid-area: short2; }
+.chaleco { grid-area: chaleco; }
+.chaleco2 { grid-area: chaleco2; }
+.camisa { grid-area: camisa; }
+.correa { grid-area: correa; }
+.mochila { grid-area: mochila; }
+
+.grid-container {
+  background-color: black;
+  display: grid;
+  grid-template:
+    'zapatos zapatos short'
+    'zapatos zapatos chaleco'
+    'short2 correa correa'
+    'chaleco2 correa correa'
+    'camisa camisa zapatos2'
+    'camisa camisa mochila';
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  border-radius: 10px;
+}
+
+.short {
+    background-image: url('img/short.jpg');
+    background-size: 100% 100%;
+}
+.zapatos {
+    background-image: url('img/zapatos.jpg');
+    background-size: 100% 100%;
+}
+.mochila {
+    background-image: url('img/mochila.jpg');
+    background-size: 100% 100%;
+}
+.camisa {
+    background-image: url('img/camisa.jpg');
+    background-size: 100% 100%;
+}
+.correa{
+    background-image: url('img/correa.jpg');
+    background-size: 100% 100%;
+}
+.chaleco{
+    background-image: url('img/chaleco.jpg');
+    background-size: 100% 100%;
+}
+.zapatos2{
+    background-image: url('img/zapatos.jpg');
+    background-size: 100% 100%;
+}
+.short2{
+    background-image: url('img/short.jpg');
+    background-size: 100% 100%;
+}
+.chaleco2{
+    background-image: url('img/chaleco.jpg');
+    background-size: 100% 100%;
+}
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+  <div class="zapatos"> </div>
+  <div class="short"> </div>
+  <div class="chaleco"> </div>  
+  <div class="camisa"> </div>
+  <div class="correa"> </div>
+  <div class="mochila"> </div>
+  <div class="zapatos2"> </div>
+  <div class="short2"> </div>
+  <div class="chaleco2"> </div>
+</div>
+
+</body>
+</html>
