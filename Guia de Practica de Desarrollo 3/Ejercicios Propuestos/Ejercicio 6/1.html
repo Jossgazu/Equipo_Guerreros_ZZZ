@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.letras { grid-area: letras; }
+.mando { grid-area: mando; }
+.cel { grid-area: cel; }
+.televisor { grid-area: televisor; }
+.laptop { grid-area: laptop; }
+.caset { grid-area: caset; }
+.teclado { grid-area: teclado; }
+
+.grid-container {
+  background-color: black;
+  display: grid;
+  grid-template:
+    'cel cel letras letras'
+    'teclado televisor televisor caset'
+    'mando laptop laptop caset';
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.televisor {
+    background-image: url('img/televisor.png');
+    background-size: 100% 100%;
+}
+.cel {
+    background-image: url('img/cel.png');
+    background-size: 100% 100%;
+}
+.letras {
+    background-image: url('img/letras.png');
+    background-size: 100% 100%;
+}
+.caset {
+    background-image: url('img/caset.png');
+    background-size: 100% 100%;
+}
+.teclado{
+    background-image: url('img/teclado.png');
+    background-size: 100% 100%;
+}
+.laptop{
+    background-image: url('img/laptop.png');
+    background-size: 100% 100%;
+}
+.mando{
+    background-image: url('img/mando.png');
+    background-size: 100% 100%;
+}
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+  <div class="letras"> </div>
+  <div class="cel"> </div>
+  <div class="laptop"> </div>  
+  <div class="caset"> </div>
+  <div class="teclado"> </div>
+  <div class="televisor"> </div>
+  <div class="mando"> </div>
+</div>
+
+</body>
+</html>
