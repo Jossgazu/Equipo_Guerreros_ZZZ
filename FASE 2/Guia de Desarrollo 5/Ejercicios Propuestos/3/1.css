@@ -1,0 +1,18 @@
+.custom-bg {
+    background-image: url('burbuja.png'); /* Reemplaza 'url_de_tu_imagen.jpg' con la URL de tu imagen */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* Puedes ajustar otros estilos según tus necesidades */
+}
+
+.gradient-custom {
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(
+      45deg,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6) 100%
+    );
+
+    
+}
